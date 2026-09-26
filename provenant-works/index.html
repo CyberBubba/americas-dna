@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provenant Works</title>
+  <meta name="description" content="Provenant Works is an independent imprint publishing works of history, documentary inquiry, constitutional inheritance, civic life, and family memory.">
+  <meta property="og:title" content="Provenant Works">
+  <meta property="og:description" content="Independent publishing for historically grounded work.">
+  <meta property="og:type" content="website">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f9f8f5;
+      --text: #1c1c1a;
+      --header-bg: #1a2744;
+      --header-text: #f9f8f5;
+      --accent: #b8975a;
+      --muted: #5a5a56;
+      --rule: #ddd8cc;
+      --btn-bg: #1a2744;
+      --btn-text: #f9f8f5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #16181f;
+        --text: #e8e4db;
+        --header-bg: #0e1322;
+        --header-text: #e8e4db;
+        --accent: #c8a96e;
+        --muted: #9a9690;
+        --rule: #2e3140;
+        --btn-bg: #2a3a5c;
+        --btn-text: #e8e4db;
+      }
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 3rem 1rem 2.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.1rem;
+      font-weight: normal;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.55rem;
+    }
+
+    header .tagline {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    main {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 3rem 1rem 4rem;
+    }
+
+    section {
+      margin-bottom: 0;
+    }
+
+    section + section {
+      border-top: 1px solid var(--rule);
+      padding-top: 2.5rem;
+      margin-top: 2.5rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      font-weight: normal;
+    }
+
+    .book-title {
+      font-size: 1.15rem;
+      font-style: italic;
+      margin-bottom: 0.2rem;
+    }
+
+    .book-author {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1.1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.6rem 1.5rem;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: opacity 0.15s;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .inquiries a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .inquiries a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.6rem; }
+      body { font-size: 16px; }
+      main { padding: 2.5rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Provenant Works</h1>
+    <p class="tagline">Independent publishing for historically grounded work</p>
+  </header>
+
+  <main>
+
+    <section class="about">
+      <p>Provenant Works is an independent imprint publishing works of history, documentary inquiry, constitutional inheritance, civic life, and family memory.</p>
+      <p>Its first title, <em>America's DNA: The American Premise</em> by Barrett Holt, examines the ideas, conflicts, records, and inherited experiences that have shaped the American story.</p>
+    </section>
+
+    <section class="current-title">
+      <h2>Current Title</h2>
+      <p class="book-title">America's DNA: The American Premise</p>
+      <p class="book-author">Barrett Holt</p>
+      <p>A new history of the American experiment, written through its principles, arguments, documents, and the lives of those who carried them forward.</p>
+      <a href="https://americasdna.us/" class="btn">Explore America&#39;s DNA</a>
+    </section>
+
+    <section class="inquiries">
+      <h2>Inquiries</h2>
+      <p>For publishing, bookseller, library, review, or media inquiries:</p>
+      <p><a href="mailto:info@americasdna.us">info@americasdna.us</a></p>
+    </section>
+
+  </main>
+
+</body>
+</html>
