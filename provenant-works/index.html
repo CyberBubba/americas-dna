@@ -9,18 +9,23 @@
   <meta property="og:description" content="Independent publishing for historically grounded work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://americasdna.us/provenant-works/">
-  <meta property="og:image" content="https://americasdna.us/cover.jpg">
+  <meta property="og:image" content="https://americasdna.us/provenant-works/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Provenant Works logo: a watercolor manatee reading a book">
   <link rel="canonical" href="https://americasdna.us/provenant-works/">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/provenant-works/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/provenant-works/apple-touch-icon.png">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --bg: #f9f8f5;
       --text: #1c1c1a;
-      --header-bg: #1a2744;
-      --header-text: #f9f8f5;
-      --accent: #b8975a;
+      --header-bg: #f9f8f5;
+      --header-text: #1a2744;
+      --accent: #8a6d32;
+      --logo-panel: transparent;
       --muted: #5a5a56;
       --rule: #ddd8cc;
       --btn-bg: #1a2744;
@@ -35,6 +40,7 @@
         --header-bg: #0e1322;
         --header-text: #e8e4db;
         --accent: #c8a96e;
+        --logo-panel: #f9f8f5;
         --muted: #9a9690;
         --rule: #2e3140;
         --btn-bg: #2a3a5c;
@@ -54,16 +60,28 @@
     header {
       background: var(--header-bg);
       color: var(--header-text);
-      padding: 3rem 1rem 2.5rem;
+      padding: 2.5rem 1rem 2.25rem;
       text-align: center;
+      border-bottom: 1px solid var(--rule);
     }
 
     header h1 {
-      font-size: 2.1rem;
-      font-weight: normal;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.55rem;
+      margin: 0 auto 1rem;
+      line-height: 0;
+    }
+
+    header h1 .logo-panel {
+      display: inline-block;
+      background: var(--logo-panel);
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+    }
+
+    header h1 img {
+      display: block;
+      width: 280px;
+      max-width: 100%;
+      height: auto;
     }
 
     header .tagline {
@@ -152,7 +170,7 @@
     }
 
     @media (max-width: 480px) {
-      header h1 { font-size: 1.6rem; }
+      header h1 img { width: 220px; }
       body { font-size: 16px; }
       main { padding: 2.5rem 1rem 3rem; }
     }
@@ -161,7 +179,7 @@
 <body>
 
   <header>
-    <h1>Provenant Works</h1>
+    <h1><span class="logo-panel"><img src="/provenant-works/logo.webp" alt="Provenant Works" width="600" height="675"></span></h1>
     <p class="tagline">Independent publishing for historically grounded work</p>
   </header>
 
@@ -169,13 +187,13 @@
 
     <section class="about">
       <p>Provenant Works is an independent imprint publishing works of history, documentary inquiry, constitutional inheritance, civic life, and family memory.</p>
-      <p>Its first title, <em>America's DNA: The American Premise</em> by Barrett Holt, examines the ideas, conflicts, records, and inherited experiences that have shaped the American story.</p>
+      <p>Its first title, <em>America's DNA: Principles, Promise, Inheritance</em> by Barrett Holt, examines the ideas, conflicts, records, and inherited experiences that have shaped the American story.</p>
     </section>
 
     <section class="current-title">
       <h2>Current Title</h2>
-      <p class="book-title">America's DNA: The American Premise</p>
-      <p class="book-author">Barrett Holt</p>
+      <p class="book-title">America's DNA: Principles, Promise, Inheritance</p>
+      <p class="book-author">Barrett Holt &middot; The American Premise, Book 1</p>
       <p>A new history of the American experiment, written through its principles, arguments, documents, and the lives of those who carried them forward.</p>
       <a href="https://americasdna.us/" class="btn">Explore America&#39;s DNA</a>
     </section>
